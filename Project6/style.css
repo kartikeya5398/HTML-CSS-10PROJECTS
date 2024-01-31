@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Foldit&family=Montserrat:wght@400;500&family=Playfair+Display&family=Playfair+Display+SC&family=REM:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+}
+
+html, body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-margin: 50px;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, .5);
+    z-index: 99;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: .2s ease-in-out;
+}
+button:hover{
+    transition: .2s ease-in-out;
+    opacity: .8;
+}
+
+nav ul li{
+    border-bottom: 3px solid transparent;
+    transition: 0.2s ease-in;
+    font-weight: 400;
+}
+nav ul li:hover{
+    border-bottom: 3px solid var(--red600);
+    transition: 0.2s ease-in;
+}
+
+/* Hero Section */
+.hero-section{
+    background-image: url(images/hero_image.png);
+    height: 100vh;
+    display: grid;
+    color: #fff;
+    place-items: center;
+    text-align: center;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-section h1{
+    font-size: 96px;
+}
+.hero-section h3{
+    font-size: 32px;
+}
+.hero-section p{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+/* Music Section */
+.music-section  {
+    padding-top: 50px;
+    background-color: var(--purple500);
+}
+.music-section .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+}
+.ipad-iphone-img{
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+.primary-btn{
+    background-color: var(--red600);
+    color: #fff;
+}
+.secondary-btn{
+    background-color: var(--purple300);
+    color: #fff;
+}
+
+.about-music{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Video Section */
+.video-section{
+    background-image: url(images/video.png);
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    min-height: 900px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+.video-section .container h3{
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.hero-section, .video-section{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Gift Section */
+.gift-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* footer   */
+.footer-upper{
+    background-color: var(--purple600);
+    padding: 20px;
+}
+
+.footer-upper .container{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+.footer-upper h4{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+}
+.footer-lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple300);
+    color: #fff;
+    padding: 10px;
+}
+
+.video-section{
+    scroll-margin: 50px;
+}
